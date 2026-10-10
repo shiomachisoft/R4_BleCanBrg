@@ -446,7 +446,7 @@ The main device (`R4_BleCanBrg`) and peer device (`R4_CanEcho`) are configured b
 1. **Power on both units**:
    - Connect USB cables to both the main device (Arduino UNO R4 WiFi: `R4_BleCanBrg`) and the peer device (Arduino UNO R4 Minima: `R4_CanEcho`).
 2. **Connect via BLE from Smartphone**:
-   - In "Serial Bluetooth Terminal" on Android, connect to **`R4_BleCanBrg`**.
+   - In "Serial Bluetooth Terminal" on Android, connect to **`R4_BleCanBrg`** (for details, refer to [Connecting via Mobile App (Serial Bluetooth Terminal)](#connecting-via-mobile-app-serial-bluetooth-terminal)).
 3. **Echo Transmission Test**:
    - Send arbitrary text from **Serial Bluetooth Terminal**.
    - If the echoed data is received from the peer device and displayed on the Serial Bluetooth Terminal screen, the test is successful.

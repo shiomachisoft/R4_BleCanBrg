@@ -446,7 +446,7 @@ flowchart LR
 1. **両機の電源を投入**:
    - メイン機 (Arduino UNO R4 WiFi: `R4_BleCanBrg`)、対向機 (Arduino UNO R4 Minima: `R4_CanEcho`) それぞれにUSBケーブルを接続して電源を入れます。
 2. **スマホからBLE接続**:
-   - Androidスマホの「Serial Bluetooth Terminal」から **`R4_BleCanBrg`** に接続します。
+   - Androidスマホの「Serial Bluetooth Terminal」から **`R4_BleCanBrg`** に接続します (詳細は [スマホアプリ (Serial Bluetooth Terminal) の接続手順](#スマホアプリ-serial-bluetooth-terminal-の接続手順) を参照してください)。
 3. **エコー送受信テスト**:
    - **Serial Bluetooth Terminal** から任意のデータを送信します。
    - 対向機から折り返されたデータを受信し、Serial Bluetooth Terminal の画面に送信したデータがそのまま表示 (エコーバック) されれば成功です。
