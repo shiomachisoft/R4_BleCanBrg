@@ -59,7 +59,7 @@ flowchart LR
 - **BLE → CAN**: Forwards data received from smartphones via BLE to the CAN bus.
 - **CAN → BLE**: Forwards data received from the CAN bus to smartphones via BLE.
 
-### BLE Specifications
+### 3. BLE Specifications
 BLE communication adheres to the **Nordic UART Service (NUS)** (for UUID and details, refer to [BLE Specifications](docs/en/manual.md#ble-specifications-nordic-uart-service)).
 
 ## Usage
@@ -141,7 +141,7 @@ flowchart LR
 - **BLE → CAN**: スマホ等からBLEで受信したデータをCANバスへ転送します。
 - **CAN → BLE**: CANバスから受信したデータをBLEでスマホ等へ転送します。
 
-### BLE 仕様
+### 3. BLE 仕様
 BLE通信には、汎用的なシリアル通信プロファイルである **Nordic UART Service (NUS)** を使用しています（UUID等の詳細は [BLE仕様](docs/ja/manual.md#ble仕様-nordic-uart-service) を参照してください）。
 
 ## 使い方
