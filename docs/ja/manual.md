@@ -378,7 +378,7 @@ flowchart LR
     W_TX -->|"(1) 送信"| T1_TX
     T1_RX -->|"(1) 受信"| W_RX
     W_VCC -->|"(1) 電源"| T1_VCC
-    W_GND ---|"(1) GND"| T1_GND
+    T1_GND ---|"(1) GND"| W_GND
 
     %% (4) CANトランシーバ1 ⇔ CANトランシーバ2
     T1_H <== "(4) CAN_H" ==> T2_H
