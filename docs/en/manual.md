@@ -175,7 +175,7 @@ For detailed flashing procedures, please refer to the [Firmware Build and Flashi
 The 12×8 LED Matrix on the Arduino UNO R4 WiFi displays the BLE connection status:
 
 ```
-【BLE Disconnected: Blinking Center Bar】   【BLE Connected: Solid Link Line】
+【BLE Disconnected: Blinking Center Bar】   【BLE Connected: Solid Full Bar】
     . . . . . . . . . . . .               . . . . . . . . . . . .
     . . . . . . . . . . . .               . . . . . . . . . . . .
     . . . . . . . . . . . .               . . . . . . . . . . . .
@@ -187,7 +187,7 @@ The 12×8 LED Matrix on the Arduino UNO R4 WiFi displays the BLE connection stat
 ```
 
 - **Disconnected (Advertising)**: The center bar (center 4×2 dots) blinks at 500 ms intervals.
-- **BLE Connected**: A full horizontal link line (12×2 dots) remains steadily lit.
+- **BLE Connected**: The full bar (12×2 dots) remains steadily lit.
 
 ---
 

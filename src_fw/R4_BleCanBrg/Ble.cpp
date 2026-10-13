@@ -26,8 +26,8 @@ static const uint32_t FRAME_BLE_DISCONNECTED[BLE_LED_FRAME_WORDS] = { // BLE未�
     0x00000000
 };
 
-// 接続中フレーム: リンクライン (全通12x2ライン)
-static const uint32_t FRAME_BLE_CONNECTED[BLE_LED_FRAME_WORDS] = { // BLE接続中LEDマトリクス表示フレーム (全通リンクライン)
+// 接続中フレーム: フルバー (全通12x2ライン)
+static const uint32_t FRAME_BLE_CONNECTED[BLE_LED_FRAME_WORDS] = { // BLE接続中LEDマトリクス表示フレーム (全通フルバー)
     0x00000000,
     0x0FFFFFF0,
     0x00000000
