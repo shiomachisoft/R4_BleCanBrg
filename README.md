@@ -11,7 +11,7 @@
 **R4_BleCanBrg** is a system that bridges bidirectional data between **BLE (Bluetooth Low Energy) and the CAN bus** using an **Arduino UNO R4 WiFi**.  
 It consists of the main firmware for Arduino and a Windows PC configuration application (**R4JigApp**) for setting CAN communication parameters (bitrate, TX CAN ID, etc.).
 
-Additionally, this repository bundles a sample peer firmware, **`R4_CanEcho`** **(for Arduino UNO R4 Minima)**, to allow easy communication testing. It echoes (loops back) received CAN messages, making it simple to verify bidirectional communication between a smartphone and the CAN bus without requiring dedicated CAN analyzers (for details, refer to [CAN Echo Test with Peer Device (R4_CanEcho)](docs/en/manual.md#can-echo-test-with-peer-device-r4_canecho)).
+Additionally, this repository bundles a sample peer firmware, **`R4_CanEcho`** **(for Arduino UNO R4 Minima)**, to allow easy communication testing. It echoes (loops back) received CAN messages, making it simple to verify bidirectional communication between BLE and the CAN bus without requiring dedicated CAN analyzers (for details, refer to [CAN Echo Test with Peer Device (R4_CanEcho)](docs/en/manual.md#can-echo-test-with-peer-device-r4_canecho)).
 
 ## System Architecture
 
@@ -41,7 +41,7 @@ After configuration, the Arduino UNO R4 WiFi bridges bidirectional data between 
 
 ```mermaid
 flowchart LR
-    Central["📱 Smartphone / Central<br><b>BLE Central</b>"]
+    Central["📱 Smartphone / Central<br>BLE Central"]
     UNO["🟦 Arduino UNO<br>R4 WiFi"]
     Trx["🔌 CAN<br>Transceiver"]
     Bus[("🚗 CAN Bus")]
@@ -93,7 +93,7 @@ Dependent libraries and board packages are subject to their respective licenses.
 **R4_BleCanBrg** は、**Arduino UNO R4 WiFi** を使用して、**BLE（Bluetooth Low Energy）とCANバスの間でデータを中継（ブリッジ）** するシステムです。  
 Arduino用のファームウェア本体と、Windows PCからCAN通信設定（ボーレートやTX CAN IDなど）を行う設定アプリ（R4JigApp）で構成されています。
 
-また、本リポジトリには手軽に通信テストを実施できるよう、対向機用のサンプルファームウェア **`R4_CanEcho`** **(Arduino UNO R4 Minima 用)** を同梱しています。受信したCANメッセージをそのまま折り返して送信 (エコー) するため、CANアナライザ等が手元にない場合でも、スマートフォンとCANバス間の双方向通信を容易に動作検証できます (詳細は [対向機 (R4_CanEcho) を使用したCANエコーテスト](docs/ja/manual.md#対向機-r4_canecho-を使用したcanエコーテスト) を参照してください)。
+また、本リポジトリには手軽に通信テストを実施できるよう、対向機用のサンプルファームウェア **`R4_CanEcho`** **(Arduino UNO R4 Minima 用)** を同梱しています。受信したCANメッセージをそのまま折り返して送信 (エコー) するため、CANアナライザ等が手元にない場合でも、BLEとCANバス間の双方向通信を容易に動作検証できます (詳細は [対向機 (R4_CanEcho) を使用したCANエコーテスト](docs/ja/manual.md#対向機-r4_canecho-を使用したcanエコーテスト) を参照してください)。
 
 ## システム構成
 
@@ -123,7 +123,7 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    Central["📱 スマホなど<br><b>BLE セントラル</b>"]
+    Central["📱 スマホなど<br>BLE セントラル"]
     UNO["🟦 Arduino UNO<br>R4 WiFi"]
     Trx["🔌 CAN<br>トランシーバ"]
     Bus[("🚗 CAN バス")]

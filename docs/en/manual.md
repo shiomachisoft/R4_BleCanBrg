@@ -42,7 +42,7 @@ Shiomachi Software (the author) assumes no liability or responsibility for any t
 **R4_BleCanBrg** is a system that bridges bidirectional data between **BLE (Bluetooth Low Energy) and the CAN bus** using an **Arduino UNO R4 WiFi**.  
 It consists of the main firmware for Arduino and a Windows PC configuration application (**R4JigApp**) for setting CAN communication parameters.
 
-Additionally, this repository bundles a sample peer firmware, **`R4_CanEcho`** **(for Arduino UNO R4 Minima)**, to allow easy communication testing. It echoes (loops back) received CAN messages, making it simple to verify bidirectional communication between a smartphone and the CAN bus without requiring dedicated CAN analyzers (for details, refer to [CAN Echo Test with Peer Device (R4_CanEcho)](#can-echo-test-with-peer-device-r4_canecho)).
+Additionally, this repository bundles a sample peer firmware, **`R4_CanEcho`** **(for Arduino UNO R4 Minima)**, to allow easy communication testing. It echoes (loops back) received CAN messages, making it simple to verify bidirectional communication between BLE and the CAN bus without requiring dedicated CAN analyzers (for details, refer to [CAN Echo Test with Peer Device (R4_CanEcho)](#can-echo-test-with-peer-device-r4_canecho)).
 
 ### System Architecture
 
@@ -75,7 +75,7 @@ After configuration, the Arduino UNO R4 WiFi bridges bidirectional data between 
 
 ```mermaid
 flowchart LR
-    Central["📱 Smartphone / Central<br><b>BLE Central</b>"]
+    Central["📱 Smartphone / Central<br>BLE Central"]
     UNO["🟦 Arduino UNO<br>R4 WiFi"]
     Trx["🔌 CAN<br>Transceiver"]
     Bus[("🚗 CAN Bus")]

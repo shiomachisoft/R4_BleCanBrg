@@ -42,7 +42,7 @@
 **R4_BleCanBrg** は、**Arduino UNO R4 WiFi** を使用して、**BLE (Bluetooth Low Energy) とCANバスの間でデータを中継 (ブリッジ)** するシステムです。  
 Arduino用のファームウェア本体と、Windows PCからCAN通信設定を行う設定アプリ (R4JigApp) で構成されています。
 
-また、本リポジトリには手軽に通信テストを実施できるよう、対向機用のサンプルファームウェア **`R4_CanEcho`** **(Arduino UNO R4 Minima 用)** を同梱しています。受信したCANメッセージをそのまま折り返して送信 (エコー) するため、CANアナライザ等が手元にない場合でも、スマートフォンとCANバス間の双方向通信を容易に動作検証できます (詳細は [対向機 (R4_CanEcho) を使用したCANエコーテスト](#対向機-r4_canecho-を使用したcanエコーテスト) を参照してください)。
+また、本リポジトリには手軽に通信テストを実施できるよう、対向機用のサンプルファームウェア **`R4_CanEcho`** **(Arduino UNO R4 Minima 用)** を同梱しています。受信したCANメッセージをそのまま折り返して送信 (エコー) するため、CANアナライザ等が手元にない場合でも、BLEとCANバス間の双方向通信を容易に動作検証できます (詳細は [対向機 (R4_CanEcho) を使用したCANエコーテスト](#対向機-r4_canecho-を使用したcanエコーテスト) を参照してください)。
 
 ### システム構成
 
@@ -75,7 +75,7 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    Central["📱 スマホ等<br><b>BLE セントラル</b>"]
+    Central["📱 スマホ等<br>BLE セントラル"]
     UNO["🟦 Arduino UNO<br>R4 WiFi"]
     Trx["🔌 CAN<br>トランシーバ"]
     Bus[("🚗 CAN バス")]
